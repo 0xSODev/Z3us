@@ -1,4 +1,4 @@
-local url = "https://github.com/0xSODev/zeus/tree/main"
+local url = "https://raw.githubusercontent.com/0xSODev/Z3us/main/scripts"
 
 local games = {
     [606849621] = "Jailbreak";
@@ -10,4 +10,4 @@ for i,v in next, games do
 end
 
 local name = games[game.PlaceId] or games[game.GameId]
-return loadstring(game:HttpGet(url.. "/"..(name or "Universal")..".lua"))()
+return loadstring(game:HttpGet(url.. "/"..(name or "coolScript")..".lua"))()
