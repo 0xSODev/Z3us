@@ -32,16 +32,11 @@ request(abcdef)
 
 local jailtp = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
 
-local function jailN(text, time)
-require(game:GetService("ReplicatedStorage").Game.Notification).new({
-    Text = text,
-    Duration = time,
-})
-end
-  
 
-jailN("Zeus is loading..", 4)
-wait(5)
-jailN("Loaded Zeus!", 4)
+require(game:GetService("ReplicatedStorage").Game.Notification).new({
+    Text = "Test",
+    Duration = 4,
+})
+ 
   
   
