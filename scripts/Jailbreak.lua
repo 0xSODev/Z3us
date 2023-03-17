@@ -54,5 +54,6 @@ Home:addLabel("Game", gamename)
 Home:addLabel("Status", ej)
 
 Home:addButton("Quit", function(quit)
+      print("quit")
     DestroyYep()
 end)
