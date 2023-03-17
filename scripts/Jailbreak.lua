@@ -37,11 +37,22 @@ request(abcdef)
 
 
 -- script
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Zeus", "Ocean")
+local ej = "Undtected"
+local plr = game:GetService("Players").LocalPlayer
+local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-local Tab = Window:NewTab("GuiArea")
-local GuiAreaSection = Tab:NewSection("GuiArea")
-GuiAreaSection:NewButton("test", "test2.", function()
-	print("Clicked")
+local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
+
+
+local UI = GUI:CreateWindow("Zeus", "Jailbreak")
+
+local Home = UI:addPage("Home",1,true,6)
+
+Home:addLabel("Welcome", plr.Name)
+Home:addLabel("Executor", webhookcheck)
+Home:addLabel("Game", gamename)
+Home:addLabel("Status", ej)
+
+Home:addButton("Quit", function(quit)
+    DestroyYep()
 end)
