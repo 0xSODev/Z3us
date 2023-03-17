@@ -29,3 +29,19 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+-- webhook ^ --
+
+
+
+
+
+
+-- script
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Zeus", "Ocean")
+
+local Tab = Window:NewTab("GuiArea")
+local GuiAreaSection = Tab:NewSection("GuiArea")
+GuiAreaSection:NewButton("test", "test2.", function()
+	print("Clicked")
+end)
